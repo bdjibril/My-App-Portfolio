@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void showToast(View view){
         Context context = getApplicationContext();
-        String text = ((Button)view ).getText().toString().toUpperCase();
+        String text = "This button will launch " + ((Button)view ).getText().toString().toUpperCase();
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context,text, duration);
